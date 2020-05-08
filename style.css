@@ -1,0 +1,304 @@
+
+* {
+   font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* NAVBAR CSS */
+nav{
+    padding-left:4em;
+    padding-right: 4em;
+    /* TODO: figure out no longer staying fixed */
+    position: fixed;
+    background: linear-gradient(to right, rgb(110, 163, 30),
+    rgb(89, 147, 50),rgb(87, 143, 55),rgb(71, 132, 67),rgb(64, 127, 73),rgb(44, 111, 93),rgb(15, 88, 119),rgb(39, 69, 134),rgb(57, 56, 141),rgb(71, 50, 145),rgb(100, 38, 154),rgb(126, 31, 170),rgb(157, 24, 190),rgb(190, 23, 137),rgb(190, 23, 98),rgb(255, 13, 122));
+ 
+    width: 100%;
+    top:0;
+    left:0;
+    z-index: 10;
+  }
+
+  nav ul {
+    margin:0;
+    padding:0;
+    display:flex;
+  }
+  nav li{
+    padding: 1em 0;
+    list-style-type: none;
+    padding: 25px;
+    font-size: 1.7em;
+  }
+  
+  nav li a {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    opacity: 0.6;
+    text-decoration: none;
+    transition: .3s;
+  }
+  
+  nav li a:hover {
+    color:rgb(255, 255, 255);
+    opacity: 1;
+    text-decoration: none;
+  }
+
+  /* HEADER CSS */
+.header {
+    position: relative;
+    background-image: url(/images/geometric-decoration-5836.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-color: rgba(255, 0, 0, 0.589);
+}
+
+
+.welcome{
+    margin-top: 25vh;
+    text-align: center;
+    font-weight: 500;
+    font-size:2em;
+    color: white}
+
+#changingword {
+     color: rgb(118, 228, 15);
+      } 
+
+/* IMAGE GALLERY CSS */
+.image-gallery {
+
+  background-image: url('projectbg.svg');
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr minmax(350px, 1fr)  minmax(350px, 1fr) minmax(350px, 1fr) 1fr;
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    padding-top: 200px;
+    grid-template-areas:
+    ". a b c ."
+    ". d e f ."
+    ;
+}
+
+.box-styling {
+    height: 350px;
+    background-color: rgb(95, 95, 95);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
+}
+
+.box-wrapper{
+  height:350px;
+  border-radius: 15%;
+  border: limegreen;
+}
+
+.box1 {
+    grid-area: a;
+}
+
+.box2 {
+    grid-area: b;
+}
+
+.box3 {
+    grid-area: c;
+}
+
+.box4 {
+    grid-area: d;
+}
+
+.box5 {
+    grid-area: e;
+}
+
+.box6 {
+    grid-area: f;
+}
+
+.bigText {
+    font-size: 2em;
+    padding-right: .5ch;
+}
+
+
+/* ABOUT ME CSS*/
+.about-me {
+    height: 100vh !important;
+    background-image: url('hellobg.svg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    padding: 20vh 50px 0 50px;
+    padding-left: 20%;
+    padding-right: 20%;
+    column-count: 1;
+    color: white;
+    font-size: larger;
+}
+
+/* CONTACT CSS */
+.contact {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 25vh !important;
+    padding-bottom: 50vh;
+    
+    /* background-color: rgb(142, 223, 35) !important; */
+    background-image: url('contactbg.svg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    color: rgb(255, 255, 255);
+    grid-template-columns: 3fr minmax(2fr, 1fr) minmax(2fr, 1fr) 3fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    ". title title ."
+    ". logo wrapper ."
+    ;
+}
+.business-card{
+  color: rgb(118, 228, 15);
+    
+}
+
+.contact-title {
+    font-size: 2em;
+    grid-area: title;
+    padding-bottom: 50px;
+    color: rgb(118, 228, 15);
+    
+}
+.resumelink{
+  color: rgb(118, 228, 15);
+    
+}
+.logo-svg {
+    width: 400px;
+    grid-area: logo;
+}
+
+.contact-wrapper {
+    grid-area: wrapper;
+}
+
+
+   /* footer section */
+   footer{
+    grid-area:footer;
+    background-image:url('FOOTERIMG.svg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: 20%;
+  }
+  footer p{
+    font-size:2em;
+    color: cornsilk;
+  }
+  footer li {
+    display:inline;
+  }
+  footer ul {
+    max-width: 640px;
+    margin: 2em auto;
+    padding:0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+  }
+  footer ul li{
+    list-style: none;
+    align-self:flex-end;
+  }
+  footer ul li a {
+    text-decoration:none;
+    /* background-image: url(FOOTERIMG.svg); */
+    opacity:.6;
+    transition: .3s;
+  }
+  footer ul li a:hover {
+    color:rgb(255, 255, 255);
+    opacity: 100;
+    text-decoration: none;
+  }
+  footer svg:hover {
+    color:rgb(255, 255, 255);
+    opacity: 100;
+    text-decoration: none;
+  }
+  footer svg {
+    color: rgb(118, 228, 15);
+    
+    width:20%;
+   
+    /* linear-gradient:(to right, rgba(110,163,30,100),
+    rgba(88,147,50,100),rgba(88,143,55,100),rgba(71,132,67,100),rgba(64,127,73,100),rgba(44,111,93,100),rgba(15,88,119),rgba(39,69,134),rgba(57,56,141),rgba(70,50,145),rgba(99,38,154),rgba(127,31,170),rgba(158,24,190),rgba(190,23,137),rgba(190,23,98),rgba(255,13,122));
+  */
+  }
+  footer p{
+    font-size: 1em;
+  }
+
+
+
+  /* MEDIA QUERY FOR SMALL SCREENS */
+ @media (max-width:1100px){
+    .image-gallery {
+        margin-bottom: 800px;
+        grid-template-columns: 1fr minmax(350px, 1fr) minmax(350px, 1fr) 1fr;
+        grid-template-areas:
+        ". a b ."
+        ". c d ."
+        ". e f ."
+        ;
+    }
+ }
+
+/* MEDIA QUERY FOR MOBILE */
+ @media (max-width:735px){
+     nav {
+         padding-left: 0;
+     }
+
+    .image-gallery {
+        padding-bottom: 200%;
+        grid-template-columns: 1fr minmax(400px, 1fr) 1fr;
+        grid-template-areas:
+        ".a."
+        ".b."
+        ".c."
+        ".d."
+        ".e."
+        ".f."
+        ;
+    }
+
+    .contact {
+        padding-bottom: 200%;
+        grid-template-columns: 3fr minmax(2fr, 1fr) 3fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        ". title ."
+        ". logo ."
+        ". wrapper ."
+        ;
+    }
+    
+ }
+
+
+
